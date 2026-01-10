@@ -1,33 +1,33 @@
 # LLM Evaluation Framework
 
-A **production-grade, CI-safe, Dockerized LLM evaluation framework** for evaluating Large Language Model (LLM) outputs using **multiple metrics**, **quality gates**, and **reproducible pipelines**.
+A **robust, production-ready, CI-compatible, Dockerized framework** for systematically evaluating **Large Language Model (LLM)** outputs using **multiple evaluation metrics**, **quality thresholds**, and **fully reproducible pipelines**.
 
-This framework is designed for:
+This framework is built to support:
 - Retrieval-Augmented Generation (RAG)
 - Question Answering (QA)
-- LLM benchmarking
-- Research & production evaluation workflows
+- LLM performance benchmarking
+- Research-grade and production-grade evaluation workflows
 
 ---
 
-## Problem This Project Solves
+## Problem Addressed by This Framework
 
-Evaluating LLM outputs is non-trivial because:
+Assessing LLM outputs is challenging because:
 
-- Single metrics (BLEU / ROUGE) are insufficient
-- Human evaluation is subjective and non-scalable
-- Results are often not reproducible
-- CI/CD pipelines rarely enforce LLM quality
-- Docker-based evaluation is frequently unsafe or broken
+- Relying on a single metric (such as BLEU or ROUGE) gives an incomplete picture
+- Manual evaluation is subjective and does not scale
+- Results often vary across environments
+- CI/CD pipelines rarely validate LLM output quality
+- Docker-based evaluation setups are frequently unstable or inconsistent
 
-### This framework provides:
+### This framework solves these issues by offering:
 
-- **Multi-metric evaluation** (reference, embedding, and judge-based)
-- **Deterministic dataset ↔ prediction alignment**
-- **CI-enforced quality gates**
-- **Docker-safe & local execution parity**
-- **Extensible metric architecture**
-- **Visualization-ready outputs**
+- **Evaluation using multiple metric categories** (reference-based, embedding-based, and judge-based)
+- **Safe and deterministic alignment of datasets and predictions**
+- **Automated quality checks enforced in CI pipelines**
+- **Consistent behavior across local, Docker, and CI environments**
+- **Pluggable and extensible metric design**
+- **Outputs ready for analysis and visualization**
 
 ---
 
