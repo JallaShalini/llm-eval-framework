@@ -33,19 +33,16 @@ jobs:
           poetry config virtualenvs.create false
           poetry install --no-interaction --no-ansi
 
-      # UNIT + INTEGRATION TESTS
       - name: Run tests with coverage
         run: |
           pytest tests/ --cov=llm_eval --cov-report=term-missing
 
-      # CI-SAFE EVALUATION RUN
       - name: Run evaluation (CI config)
         run: |
           poetry run llm-eval run \
             --config examples/config_ci.yaml \
             --output-dir results
-
-      # UPLOAD ARTIFACTS
+   
       - name: Upload evaluation results
         uses: actions/upload-artifact@v4
         with:
